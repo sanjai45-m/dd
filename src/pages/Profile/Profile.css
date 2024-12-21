@@ -1,0 +1,187 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+}
+
+.profile-page {
+  padding: 2rem;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: slide-in 1s ease-in-out;
+}
+
+h1.animate-header {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+.sub-header {
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.tab {
+  background: #f8f9fa;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.tab.active {
+  background: #007bff;
+  color: white;
+}
+
+.tab:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button.save-btn,
+button.add-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.save-btn:hover,
+button.add-btn:hover {
+  background: #0056b3;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.skill-chip:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* New CSS for Skills Section */
+.skills-section {
+  margin-top: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  max-width: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+.skill-box input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.skill-box button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.skill-box button:hover {
+  background: #218838;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

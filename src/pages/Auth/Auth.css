@@ -1,0 +1,133 @@
+/* General styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Light background color */
+}
+
+.auth-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-out; /* Added fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title and Subtitle Styles */
+.auth-title {
+  color: #333;
+  margin-bottom: 36px;
+  font-size: 2rem;
+  animation: fadeInText 1s ease-out;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-subtitle {
+  color: #666;
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+  animation: fadeInText 1s ease-out;
+}
+
+.auth-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+/* Button styles */
+.auth-btn {
+  width: 100%;
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #3578e5;
+  border-color: #3578e5;
+  transform: translateY(-2px);
+}
+
+.auth-btn:active {
+  transform: translateY(0);
+}
+
+/* Footer */
+.auth-footer {
+  margin-top: 20px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+  color: #3578e5;
+  text-decoration: underline;
+}
+
+/* Smooth transitions for buttons */
+.auth-btn, .auth-footer a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Input field transitions */
+.input-field {
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effects for the entire container */
+.auth-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}

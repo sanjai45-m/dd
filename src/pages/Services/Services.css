@@ -1,0 +1,83 @@
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.services-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card h2 {
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.features li {
+  color: #666;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.features li::before {
+  content: "✓";
+  color: #4a90e2;
+  position: absolute;
+  left: 0;
+}
+
+.buy-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #357abd;
+}

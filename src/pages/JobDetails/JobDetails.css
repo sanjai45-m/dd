@@ -1,0 +1,99 @@
+.job-details-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.job-header {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.company {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.job-meta {
+  display: flex;
+  gap: 20px;
+  color: #888;
+}
+
+.job-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-section {
+  margin-bottom: 30px;
+}
+
+.job-section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.job-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-section ul li {
+  color: #666;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.job-section ul li::before {
+  content: "•";
+  color: #4a90e2;
+  position: absolute;
+  left: 0;
+}
+
+.apply-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.apply-btn, .save-job-btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.apply-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+}
+
+.save-job-btn {
+  background-color: white;
+  color: #4a90e2;
+  border: 1px solid #4a90e2;
+}
+
+.apply-btn:hover {
+  background-color: #357abd;
+}
+
+.save-job-btn:hover {
+  background-color: #f5f5f5;
+}

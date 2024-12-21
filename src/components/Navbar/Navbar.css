@@ -1,0 +1,139 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar container for centering the content */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s ease;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #2196f3;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #4a90e2;
+  transform: translateY(-2px);
+}
+
+/* Button Styles */
+.login-btn, .register-btn {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Login Button */
+.login-btn {
+  color: #4a90e2;
+}
+
+.login-btn:hover {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+}
+
+.register-btn:hover {
+  background-color: #2196f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Adding hover underline animation */
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4a90e2;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+/* Adding a subtle background color transition for the navbar */
+.navbar:hover {
+  background-color: #f8f8f8;
+}
+
+/* Media Queries for screens under 768px */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav-links on mobile */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+    cursor: pointer;
+  }
+
+  .navbar-container {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+}
+
+/* Media Queries for screens above 768px (Web View) */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Hide menu icon on web view */
+  }
+
+  .nav-links {
+    display: flex; /* Display nav-links on web view */
+  }
+}
